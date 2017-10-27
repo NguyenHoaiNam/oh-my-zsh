@@ -15,3 +15,15 @@ fi
 # Git
 alias grw='git review'
 
+function gcn() {
+    if [ -d ~/MyGit ] ; then
+    cd ~/MyGit
+    fi
+    if [ -z $3 ]; then
+        git clone https://github.com/$1/$2.git
+    else
+        git clone https://github.com/$1/$2.git -b stable/$3
+    fi
+}
+
+
