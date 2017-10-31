@@ -26,4 +26,7 @@ function gcn() {
     fi
 }
 
-
+# Alias for Tox
+alias tox8='tox -e pep8'
+alias tox7='tox -e py27'
+alias tox5='tox -e py35'
